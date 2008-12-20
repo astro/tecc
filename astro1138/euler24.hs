@@ -11,3 +11,6 @@ permute l = [c:r' | (c, r) <- pick l,
                     r' <- (permute r)]
 
 euler24 = (permute [0..9]) !! 999999
+
+main = do
+  putStrLn $ show euler24
